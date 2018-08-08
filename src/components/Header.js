@@ -4,6 +4,16 @@ class Header extends React.Component {
     render() {
         return (
             <section id="header">
+                <div className="container">
+                <div className="row">
+                    <div className="col-xs-6">
+                        <p>Hello</p>
+                    </div>
+                    <div className="col-xs-6">
+                    <p>World</p>
+                    </div>
+                    </div>
+                </div>
                 <div className="inner">
                     <span className="icon major fa-cloud"></span>
                     <h1>Hi, I'm <strong>Photon</strong>, another fine<br />

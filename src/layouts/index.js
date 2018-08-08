@@ -32,7 +32,7 @@ class Template extends React.Component {
         return (
             <div className={`body ${this.state.loading}`}>
             <Helmet>
-                <link rel="stylesheet" href={withPrefix('skel.css')} />
+                {/*<link rel="stylesheet" href={withPrefix('skel.css')} />*/}
             </Helmet>
                 <Header />
                 {children()}
