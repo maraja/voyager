@@ -6,8 +6,8 @@ import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
 import pic03 from '../assets/images/pic03.jpg'
 import pic04 from '../assets/images/pic04.jpg'
-import iphone_portrait from '../assets/images/mockups/breakdance_iphonexspacegrey_portrait.png';
-import iphone_portrait2 from '../assets/images/mockups/dance2_iphonexspacegrey_portrait.png';
+import iphone_portrait from '../assets/images/mockups/breakdance_iphonexspacegrey_portrait.png'
+import iphone_portrait2 from '../assets/images/mockups/dance2_iphonexspacegrey_portrait.png'
 
 class Homepage extends React.Component {
   render() {
@@ -18,31 +18,34 @@ class Homepage extends React.Component {
         <Helmet title={siteTitle} />
 
         <section id="hero">
-        <span className="image fit">
-        <img src={iphone_portrait2} alt="" />
-        </span>
+          <span className="image fit">
+            <img src={iphone_portrait2} alt="" />
+          </span>
         </section>
 
         <section id="one" className="main style1">
-          <div className="row">
-            <div className="col-xs-12 col-sm-6">
-              <header className="major">
-                <h2>
-                  Lorem ipsum dolor adipiscing<br />
-                  amet dolor consequat
-                </h2>
-              </header>
-              <p>
-                Adipiscing a commodo ante nunc accumsan et interdum mi ante
-                adipiscing. A nunc lobortis non nisl amet vis sed volutpat
-                aclacus nascetur ac non. Lorem curae et ante amet sapien sed
-                tempus adipiscing id accumsan.
-              </p>
-            </div>
-            <div className="col-xs-12 col-sm-6">
-              <span className=" card image fit">
-                <img src={pic01} alt="" />
-              </span>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6 col-xs-12">
+                <header className="major">
+                  <h2>
+                    Lorem ipsum dolor adipiscing
+                    <br />
+                    amet dolor consequat
+                  </h2>
+                </header>
+                <p>
+                  Adipiscing a commodo ante nunc accumsan et interdum mi ante
+                  adipiscing. A nunc lobortis non nisl amet vis sed volutpat
+                  aclacus nascetur ac non. Lorem curae et ante amet sapien sed
+                  tempus adipiscing id accumsan.
+                </p>
+              </div>
+              <div className="col-lg-6 col-xs-12">
+                <span className=" card image fit">
+                  <img src={pic01} alt="" />
+                </span>
+              </div>
             </div>
           </div>
         </section>
@@ -50,7 +53,7 @@ class Homepage extends React.Component {
         <section id="two" className="main style2">
           <div className="container">
             <div className="row">
-            <div className="col-xs-12 col-sm-6">
+              <div className="col-xs-12 col-sm-6">
                 <ul className="major-icons">
                   <li>
                     <span className="icon style1 major fa-code" />
@@ -75,7 +78,8 @@ class Homepage extends React.Component {
               <div className="col-xs-12 col-sm-6">
                 <header className="major">
                   <h2>
-                    Lorem ipsum dolor adipiscing<br />
+                    Lorem ipsum dolor adipiscing
+                    <br />
                     amet dolor consequat
                   </h2>
                 </header>
@@ -104,7 +108,6 @@ class Homepage extends React.Component {
             </div>
           </div>
         </section>
-
 
         <section id="three" className="main style1 special">
           <div className="grid-wrapper">

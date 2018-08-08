@@ -1,57 +1,52 @@
 .body.is-loading {
-    #hero {
-            @include vendor('transform', 'scale(1.05)');
-            @include vendor('transform', 'translateY(3em)');
-            opacity: 0;
+  #hero {
+    @include vendor('transform', 'scale(1.05)');
+    @include vendor('transform', 'translateY(3em)');
+    opacity: 0;
 
-            img {
-                @include vendor('transform', 'opacity(0)');
-                opacity: 0;
-            
-        }
+    img {
+      @include vendor('transform', 'opacity(0)');
+      opacity: 0;
     }
+  }
 }
 
 #hero {
-    background: none;
-    margin-top:-350px;
-    z-index: 10;
-    @include padding(9em, 0, (0,0,_size(element-margin),0));
-    @include vendor('transition', 'transform 1.25s ease');
+  background: none;
+  margin-top: -400px;
+  z-index: 10;
+  @include padding(9em, 0, (0, 0, _size(element-margin), 0));
+  @include vendor('transition', 'transform 1.25s ease');
+  @include vendor('transition-delay', '1s');
+  @include vendor('transform', 'translateY(0)');
+  opacity: 1;
+  img {
+    @include vendor('transition', 'opacity 1.25s ease');
     @include vendor('transition-delay', '1s');
-    @include vendor('transform', 'translateY(0)');
     opacity: 1;
-    img {
-        
-                @include vendor('transition', 'opacity 1.25s ease');
-                @include vendor('transition-delay', '1s');
-                opacity: 1;
-        width: 500px;
-        margin: 0 auto;
-    }
+    width: 500px;
+    margin: 0 auto;
+  }
 }
-
-
-
 
 @include breakpoint(small) {
-    #hero {
-        img {
-            width: 500px;
-        }
+  #hero {
+    img {
+      width: 500px;
     }
+  }
 }
 @include breakpoint(xsmall) {
-    #hero {
-        img {
-            width: 400px;
-        }
+  #hero {
+    img {
+      width: 400px;
     }
+  }
 }
 @include breakpoint(xxsmall) {
-    #hero {
-        img {
-            width: 300px;
-        }
+  #hero {
+    img {
+      width: 300px;
     }
+  }
 }
