@@ -1,0 +1,11 @@
+.slanted {
+    &::after {
+        position:absolute;
+        content: " ";
+        display:block;
+        left:-5%;
+        bottom:-10px;
+        transform:rotate(5deg);
+        width:110%;
+      }
+}

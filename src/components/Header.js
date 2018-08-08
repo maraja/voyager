@@ -7,6 +7,7 @@ import iphone_portrait2 from '../assets/images/mockups/dance2_iphonexspacegrey_p
 class Header extends React.Component {
     render() {
         return (
+            <div>
             <section id="header">
                 <div className="container">
                 <div className="row">
@@ -30,6 +31,8 @@ class Header extends React.Component {
                     </ul>*/}
                 </div>
             </section>
+            </div>
+
         )
     }
 }
