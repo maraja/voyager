@@ -6,6 +6,8 @@ import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
 import pic03 from '../assets/images/pic03.jpg'
 import pic04 from '../assets/images/pic04.jpg'
+import iphone_portrait from '../assets/images/mockups/breakdance_iphonexspacegrey_portrait.png';
+import iphone_portrait2 from '../assets/images/mockups/dance2_iphonexspacegrey_portrait.png';
 
 class Homepage extends React.Component {
   render() {
@@ -15,9 +17,15 @@ class Homepage extends React.Component {
       <div>
         <Helmet title={siteTitle} />
 
+        <section id="hero">
+        <span className="image fit">
+        <img src={iphone_portrait2} alt="" />
+        </span>
+        </section>
+
         <section id="one" className="main style1">
-          <div className="grid-wrapper">
-            <div className="col-6">
+          <div className="row">
+            <div className="col-xs-12 col-sm-6">
               <header className="major">
                 <h2>
                   Lorem ipsum dolor adipiscing<br />
@@ -31,8 +39,8 @@ class Homepage extends React.Component {
                 tempus adipiscing id accumsan.
               </p>
             </div>
-            <div className="col-6">
-              <span className="image fit">
+            <div className="col-xs-12 col-sm-6">
+              <span className=" card image fit">
                 <img src={pic01} alt="" />
               </span>
             </div>
@@ -42,7 +50,7 @@ class Homepage extends React.Component {
         <section id="two" className="main style2">
           <div className="container">
             <div className="row">
-              <div className="6u 12u(xsmall)">
+            <div className="col-xs-12 col-sm-6">
                 <ul className="major-icons">
                   <li>
                     <span className="icon style1 major fa-code" />
@@ -64,7 +72,7 @@ class Homepage extends React.Component {
                   </li>
                 </ul>
               </div>
-              <div className="6u 12u(xsmall)">
+              <div className="col-xs-12 col-sm-6">
                 <header className="major">
                   <h2>
                     Lorem ipsum dolor adipiscing<br />
@@ -97,61 +105,6 @@ class Homepage extends React.Component {
           </div>
         </section>
 
-        <section id="two" className="main style2">
-          <div className="grid-wrapper">
-            <div className="col-6">
-              <ul className="major-icons">
-                <li>
-                  <span className="icon style1 major fa-code" />
-                </li>
-                <li>
-                  <span className="icon style2 major fa-bolt" />
-                </li>
-                <li>
-                  <span className="icon style3 major fa-camera-retro" />
-                </li>
-                <li>
-                  <span className="icon style4 major fa-cog" />
-                </li>
-                <li>
-                  <span className="icon style5 major fa-desktop" />
-                </li>
-                <li>
-                  <span className="icon style6 major fa-calendar" />
-                </li>
-              </ul>
-            </div>
-            <div className="col-6">
-              <header className="major">
-                <h2>
-                  Lorem ipsum dolor adipiscing<br />
-                  amet dolor consequat
-                </h2>
-              </header>
-              <p>
-                Adipiscing a commodo ante nunc accumsan interdum mi ante
-                adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus
-                nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
-                Adipiscing id accumsan adipiscing ipsum.
-              </p>
-              <p>
-                Blandit faucibus proin. Ac aliquam integer adipiscing enim non
-                praesent vis commodo nunc phasellus cubilia ac risus accumsan.
-                Accumsan blandit. Lobortis phasellus non lobortis dit varius mi
-                varius accumsan lobortis. Blandit ante aliquam lacinia lorem
-                lobortis semper morbi col faucibus vitae integer placerat
-                accumsan orci eu mi odio tempus adipiscing adipiscing adipiscing
-                curae consequat feugiat etiam dolore.
-              </p>
-              <p>
-                Adipiscing a commodo ante nunc accumsan interdum mi ante
-                adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus
-                nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
-                Adipiscing id accumsan adipiscing ipsum.
-              </p>
-            </div>
-          </div>
-        </section>
 
         <section id="three" className="main style1 special">
           <div className="grid-wrapper">

@@ -23,6 +23,16 @@
 		weight-bold:		400
 	);
 
+// Shadow.
+	$shadow: (
+		medium-drop: 0px 8px 18px -7px #333,
+		small-drop: 0px 4px 11px -4px #333,
+		large-drop: 0px 14px 57px -11px #555,
+		tiny-drop: 0px 4px 8px -1px #ccc,
+		drop: 0 2px 4px 0 rgba(14,30,37,.12)
+
+	);
+
 // Palette.
 	$palette: (
 		bg:					#fff,

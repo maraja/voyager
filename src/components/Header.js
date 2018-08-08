@@ -1,5 +1,9 @@
 import React from 'react'
 
+import iphone_portrait from '../assets/images/mockups/breakdance_iphonexspacegrey_portrait.png';
+import iphone_portrait2 from '../assets/images/mockups/dance2_iphonexspacegrey_portrait.png';
+
+
 class Header extends React.Component {
     render() {
         return (
@@ -20,9 +24,10 @@ class Header extends React.Component {
                     little freebie from <a href="http://html5up.net">HTML5 UP</a>.</h1>
                     <p>Accumsan feugiat mi commodo erat lorem ipsum, sed magna<br />
                     lobortis feugiat sapien sed etiam volutpat accumsan.</p>
-                    <ul className="actions">
+                    {/*<ul className="actions">
                         <li><a href="#one" className="button scrolly">Discover</a></li>
-                    </ul>
+                        
+                    </ul>*/}
                 </div>
             </section>
         )
