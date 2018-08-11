@@ -27,6 +27,22 @@
     width: 500px;
     margin: 0 auto;
   }
+
+  .slider {
+    img {
+      //   box-shadow: _shadow(tiny-drop);
+      border-radius: 8px;
+      width: 400px;
+    }
+    .slider-control-bottomcenter {
+      //   display: none;
+      button {
+        box-shadow: none;
+        font-size: 40px !important;
+        color: #aaa !important;
+      }
+    }
+  }
 }
 
 @include breakpoint(small) {
@@ -40,6 +56,11 @@
   #hero {
     img {
       width: 400px;
+    }
+    .slider {
+      .slider-control-bottomcenter {
+        display: none;
+      }
     }
   }
 }

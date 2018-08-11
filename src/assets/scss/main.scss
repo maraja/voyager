@@ -47,7 +47,7 @@ body,
 input,
 select,
 textarea {
-  color: _palette(fg);
+  background: _palette(fg);
   font-family: _font(family);
   font-size: 16pt;
   font-weight: _font(weight);
@@ -1015,6 +1015,13 @@ button,
   min-height: 90vh;
   // to add the slanted edge at the bottom
   clip-path: _divs(left-slant);
+  //IE 9 and down
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+
+  // IE 10 and 11
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    opacity: 0.5;
+  }
 
   h1 {
     margin: 0;

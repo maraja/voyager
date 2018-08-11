@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
+import Carousel from 'nuka-carousel'
 
 import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
@@ -18,15 +19,30 @@ class Homepage extends React.Component {
         <Helmet title={siteTitle} />
 
         <section id="hero">
-          <span className="image fit">
+          {/*<span className="image fit">
             <img src={iphone_portrait2} alt="" />
-          </span>
+    </span>*/}
+
+          <Carousel
+            wrapAround
+            renderCenterLeftControls={({ previousSlide }) => null}
+            renderCenterRightControls={({ nextSlide }) => null}
+            initialSlideHeight={500}
+            autoplay
+          >
+            <img src={iphone_portrait2} />
+            <img src={iphone_portrait2} />
+            <img src={iphone_portrait2} />
+            <img src={iphone_portrait2} />
+            <img src={iphone_portrait2} />
+            <img src={iphone_portrait2} />
+          </Carousel>
         </section>
 
         <section id="one" className="main style1">
           <div className="container">
             <div className="row">
-              <div className="col-lg-6 col-xs-12">
+              <div className="col-xs-6">
                 <header className="major">
                   <h2>
                     Lorem ipsum dolor adipiscing
@@ -41,7 +57,7 @@ class Homepage extends React.Component {
                   tempus adipiscing id accumsan.
                 </p>
               </div>
-              <div className="col-lg-6 col-xs-12">
+              <div className="col-xs-6">
                 <span className=" card image fit">
                   <img src={pic01} alt="" />
                 </span>

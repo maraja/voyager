@@ -33,10 +33,10 @@ $font: (
 );
 // Shadow.
 $shadow: (
-  medium-drop: 0px 8px 18px -7px #333,
+  medium-drop: 0px 6px 27px -8px rgba(0, 0, 0, 0.7),
   small-drop: 0px 4px 11px -4px #333,
   large-drop: 0px 14px 57px -11px #555,
-  tiny-drop: 0px 4px 8px -1px #ccc,
+  tiny-drop: 0px 3px 19px -9px rgba(0, 0, 0, 0.75),
   drop: 0 2px 4px 0 rgba(14, 30, 37, 0.12),
 );
 $divs: (
@@ -50,8 +50,8 @@ $divs: (
 );
 // Palette.
 $palette: (
-  bg: #fff,
-  fg: #666,
+  bg: #f9fbfc,
+  fg: #f9fbfc,
   fg-bold: #555,
   fg-light: #999,
   border: rgba(144, 144, 144, 0.5),
